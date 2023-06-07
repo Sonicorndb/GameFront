@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Noto Serif', serif; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.logout{
+    color: white;
+    background-color: black;
+}
+
+.title{
+    margin-top: 6px;
+}
+
+.h1login{
+    float: left; 
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(255, 137, 2);
+}
+
+.login{
+    margin-top: 5px;
+    padding-left: 220px;
+    flex: end;
+}

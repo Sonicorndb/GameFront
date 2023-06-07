@@ -1,0 +1,10 @@
+<!-- Boton registro de juegos
+    <a href="/registrar-videojuegos"><button type="button" style="margin-bottom: 10px;" class="btn btn-success">Registrar videojuegos</button></a>-->
+
+<div class="grid" style="padding-top: 60px;" >
+        <div *ngFor="let videojuego of videojuegos" class="grid-item" >
+            <a routerLink="comprar-juego/{{videojuego.id}}" routerLinkActive="active"><img src="assets/GameImages/{{videojuego.nombre}}image.jpg" class="img"></a>
+            <a class="txtnombre">{{videojuego.nombre}}</a>
+                 <a class="txtprecio">{{videojuego.precio}}€</a>
+        </div>
+  </div>

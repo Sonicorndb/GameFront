@@ -1,0 +1,22 @@
+<a href="/registrar-usuario"><button type="button" class="btn btn-success" style="margin-bottom: 10px;">Registrar Usuario</button></a>
+<table class="table ">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.email}}</td>
+            <td>
+                <button (click)="actualizarUsuario(usuario.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarUsuario(usuario)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
