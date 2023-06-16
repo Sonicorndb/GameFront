@@ -1,0 +1,17 @@
+
+<div class="divBuy">
+<img class="gameImage" src="assets/GameImages/{{videojuego.nombre}}image.jpg">
+</div>
+
+<div class="text">
+    <p class="nombre">{{videojuego.nombre}}</p>
+    <ng-template [ngIf] = "videojuego.precio == 0" [ngIfElse] = "templateElse"> 
+        <p class="precio"> Gratis</p>
+    </ng-template>
+
+    <ng-template #templateElse>
+        <p class="precio">{{videojuego.precio}}€</p>
+    </ng-template>
+
+    <a (click)="anadirJuego()"><button class="btn btn-success botonCompra">Comprar ahora</button></a>
+</div>

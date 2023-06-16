@@ -1,0 +1,47 @@
+.gameImage{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.divBuy{
+    margin-top: 150px;
+    margin-left: 50px;
+    position: fixed;
+    border-radius: 20px;
+    background-color: aliceblue;
+    width:500px;
+}
+
+.nombre{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+}
+
+.precio{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+}
+
+.text{
+    margin-top: 150px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background-color: rgb(199, 199, 199);
+    display: block;
+    float:right;
+    width:500px;
+    height:280px;
+}
+
+.botonCompra{
+    width: 480px;
+    background-color: rgb(255, 137, 2);
+    margin: 10px;
+    margin-top: 10px;
+}

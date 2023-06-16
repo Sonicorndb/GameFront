@@ -1,0 +1,13 @@
+
+<div class="grid" style="padding-top: 60px;">
+    <div *ngFor="let videojuego of videojuegos" class="grid-item" >
+        <a (click)="comprarJuego(this.videojuego.id)"><img src="assets/GameImages/{{videojuego.nombre}}image.jpg"  class="img" ></a>
+        <a class="txtnombre">{{videojuego.nombre}}</a>
+        <ng-template [ngIf] = "videojuego.precio == 0" [ngIfElse] = "templateElse"> 
+            <p class="txtprecio"> Gratis</p>
+        </ng-template>
+        <ng-template #templateElse>
+            <p class="txtprecio">{{videojuego.precio}}€</p>
+        </ng-template>
+    </div>
+</div>

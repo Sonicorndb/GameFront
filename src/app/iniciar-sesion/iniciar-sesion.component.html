@@ -1,0 +1,18 @@
+<div class="logindiv">
+    
+    <div class="loginpad">
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group" style="margin: 10px;">
+                <label>Correo Electrónico : </label>
+                <input type="text" class="form-control" id="email" [(ngModel)]="emailActivar" name="email" required placeholder="Escriba su correo electrónico..." #email="ngModel">
+            </div>
+            <div class="form-group" style="margin: 10px;">
+                <label>Contraseña : </label>
+                <input type="text" class="form-control" id="contrasena" [(ngModel)]="contrasenaActivar" name="contrasena" required placeholder="contraseña..." #contrasena="ngModel">
+            </div>
+            <div class="error" [hidden]="!requestFailed">Email o contraseña incorrecto </div>
+            <button class="btn btn-success botonLogin" style="margin: 10px;" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+<div><img src="assets\otherImages\mario.png" class="img"></div>
